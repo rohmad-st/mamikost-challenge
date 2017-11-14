@@ -1,0 +1,69 @@
+$navbarColor: #313a4a;
+$linkColor: #fafafa;
+$bgColor: #e9edf2;
+$bgFilterArea: #ffffff;
+$bgCarousel: #fafafa;
+
+body {
+  background: $bgColor;
+  margin-top: 50px;
+}
+
+.form-filter {
+  background: $bgFilterArea;
+  border: 1px solid darken($bgFilterArea, 10%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+
+  .form-group {
+    padding: 10px 10px;
+  }
+}
+
+.navbar-brand {
+  img {
+    top: 0;
+    margin: 2px;
+    position: absolute;
+    height: 45px;
+  }
+}
+
+.navbar-custom {
+  background-color: $navbarColor;
+  border-color: darken($navbarColor, 10%);
+
+  ul {
+    li {
+      &.active {
+        background: darken($navbarColor, 15%);
+      }
+      a {
+        &:hover, &:active {
+          background: darken($navbarColor, 10%)
+        }
+      }
+    }
+  }
+  a {
+    color: $linkColor;
+  }
+}
+
+.carousel {
+  margin: 10px 0;
+  background: $bgCarousel;
+}
+
+.VueCarousel {
+  margin: 10px 0;
+  background: $bgCarousel;
+
+  .VueCarousel-slide {
+    img {
+      height: 300px;
+    }
+  }
+}
