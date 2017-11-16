@@ -65,11 +65,10 @@ body {
 }
 
 .container-data {
-  .column {
+  .column .thumbnail {
     height: 445px;
     overflow: hidden;
     margin: 10px 0;
-
     img {
       height: 165px;
     }
