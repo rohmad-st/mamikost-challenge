@@ -9,8 +9,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">
-          <!-- <span></span> -->
-          <img src="/src/assets/images/header_mamikos.png" alt="logo">
+          <img src="static/images/header_mamikos.png" alt="logo">
         </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
@@ -19,7 +18,7 @@
           <li><a href="#">Menu 2</a></li>
           <li><a href="#">Menu 3</a></li>
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>
     </div>
   </nav>
 </template>
