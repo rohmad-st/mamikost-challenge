@@ -2,8 +2,15 @@
   <div id="app">
     <Navbar/>
     <CarouselArea/>
-    <FilterArea/>
-    <Home/>
+    <FilterArea @onChangeLocation="onChangeLocation"
+      @onChangeGender="onChangeGender"
+      @onChangePrice="onChangePrice"
+      @setDefaultValue="setDefaultValue"
+    />
+    <Home :locationId="locationId"
+      :genderId="genderId"
+      :price="price"
+    />
   </div>
 </template>
 
@@ -25,8 +32,26 @@ export default {
   },
   data() {
     return {
-      //
+      locationId: null,
+      genderId: null,
+      price: null,
     };
+  },
+  methods: {
+    setDefaultValue({ locationId, genderId, price }) {
+      this.locationId = locationId;
+      this.genderId = genderId;
+      this.price = price;
+    },
+    onChangeLocation(id) {
+      this.locationId = id;
+    },
+    onChangeGender(id) {
+      this.genderId = id;
+    },
+    onChangePrice(id) {
+      this.price = id;
+    },
   },
 };
 </script>

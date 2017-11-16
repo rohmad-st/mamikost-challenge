@@ -40,5 +40,6 @@ module.exports = {
     'no-param-reassign': 0,
     'global-require': 0,
     'no-dynamic-require': 0,
+    'always': 0,
   }
 }
