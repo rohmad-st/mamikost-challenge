@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <form class="form-filter">
-      <div class="form-group col-sm-3">
+      <div class="form-group col-xs-12 col-sm-12 col-md-2">
         <label for="selectArea">Area</label>
         <select class="form-control"
           id="selectArea"
@@ -14,7 +14,7 @@
           </option>
         </select>
       </div>
-      <div class="form-group col-sm-2">
+      <div class="form-group col-xs-12 col-sm-12 col-md-2">
         <label for="selectGender">Gender</label>
         <select class="form-control"
           id="selectGender"
@@ -27,7 +27,7 @@
           </option>
         </select>
       </div>
-      <div class="form-group col-sm-3">
+      <div class="form-group col-xs-12 col-sm-12 col-md-2">
         <label for="selectPrice">Price</label>
         <select class="form-control"
           id="selectPrice"
